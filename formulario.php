@@ -8,8 +8,9 @@
         <title>Sistema de Cadastros</title>
     </head>
     <body>
+        <a href="home.php">Voltar</a>
         <div class="box">
-            <form >
+            <form action="gravaFormulario.php" method="POST" >
                 <fieldset>
                     <legend><b>Fórmulario de Clientes</b></legend>
                     <br>
@@ -21,6 +22,11 @@
                     <div class="inputbox"> 
                         <input type="text" name="email" id="email" class="inputUser" required>
                         <label for="email" class="labelInput">E-mail</label>
+                    </div>
+                    <br><br>
+                    <div class="inputbox"> 
+                        <input type="password" name="senha" id="senha" class="inputUser" required>
+                        <label for="senha" class="labelInput">Senha</label>
                     </div>
                     <br><br>
                     <div class="inputbox"> 
@@ -57,7 +63,7 @@
                         <label for="endereco" class="labelInput">Endereço</label>
                     </div>
                     <br><br>
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit" name="submit">
                 </fieldset>
             </form>
         </div>

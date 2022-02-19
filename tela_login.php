@@ -8,13 +8,16 @@
         <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
+        <a href="home.php">Voltar</a>
         <div class="tela-login">
             <h1>Login</h1>
-            <input type="text" placeholder="Nome">
-            <br><br>
-            <input type="password" placeholder="Senha">
-            <br><br>
-            <button>Enviar</button>
+            <form action="finalizaLogin.php" method="POST">
+                <input type="text" name="email" placeholder="E-mail">
+                <br><br>
+                <input type="password" name="senha" placeholder="Senha">
+                <br><br>
+                <input class="input-submit"  type="submit" name="subtmi" value="Enviar">
+            </form>
         </div>
     </body>
 </html>
