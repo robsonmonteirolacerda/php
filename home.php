@@ -11,7 +11,7 @@
         <h1>Sistema de Cadastro</h1>
         <h2>Faça seu login</h2>
         <div class="box">
-            <a href="">Login</a>
+            <a href="tela_login.php">Login</a>
             <a href="formulario.php">Cadastre-se</a>
         </div>
     </body>
