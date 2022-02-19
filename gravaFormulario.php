@@ -12,11 +12,12 @@
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
+        $senha =  $_POST['senha'];
 
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,genero,data_nascimento,cidade,estado,endereco) 
-        VALUES ('$nome', '$email', '$telefone', '$genero', '$date_nascimento', '$cidade', '$estado', '$endereco')");
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,genero,data_nascimento,cidade,estado,endereco,senha) 
+        VALUES ('$nome', '$email', '$telefone', '$genero', '$date_nascimento', '$cidade', '$estado', '$endereco', $senha)");
     }
 
-    
+    header('Location: tela_login.php');
 
 ?>

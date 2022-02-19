@@ -12,11 +12,11 @@
         <div class="tela-login">
             <h1>Login</h1>
             <form action="finalizaLogin.php" method="POST">
-                <input type="text" name="email" placeholder="E-mail">
+                <input type="text" name="email" id="email" placeholder="E-mail">
                 <br><br>
-                <input type="password" name="senha" placeholder="Senha">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
                 <br><br>
-                <input class="input-submit"  type="submit" name="subtmi" value="Enviar">
+                <input class="input-submit"  type="submit" name="submit" value="Enviar">
             </form>
         </div>
     </body>
